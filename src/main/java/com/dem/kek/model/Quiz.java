@@ -9,23 +9,23 @@ import java.util.List;
 @Document("quiz")
 public class Quiz {
     @Id
-    private String id;
+    private Integer id;
     private String question;
     private List<Pair<String, Integer>> choices;
     private Integer answer;
 
-    public Quiz(String id, String question, List<Pair<String, Integer>> choices, Integer answer) {
+    public Quiz(Integer id, String question, List<Pair<String, Integer>> choices, Integer answer) {
         this.id = id;
         this.question = question;
         this.choices = choices;
         this.answer = answer;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
