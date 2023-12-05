@@ -24,6 +24,7 @@ public class Runner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("-----STARTING MONGODB INITIALIZATION-----\n");
+        deleteQuizData();
     }
 
     public void createQuizData() {
